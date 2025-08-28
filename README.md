@@ -1,24 +1,3 @@
-# llm-api-gateway
-
-Unified LLM API Gateway — aggregates multiple LLM providers behind a single API with caching, rate limiting, and observability.
-
-## Quickstart (dev)
-1. `docker-compose up --build`
-2. Gateway: `http://localhost:8080/v1/llm/chat`
-3. Admin: `http://localhost:3000`
-
-## Components
-- gateway (Go): edge gateway
-- adapters: provider adapters
-- admin (NestJS): API key & usage dashboard
-- infra: docker-compose / k8s manifests
-
-## Running tests
-- Gateway unit tests: `cd gateway && go test ./...`
-- Admin tests: `cd admin && npm test`
-
-
------------
 # Unified LLM API Gateway
 
 ## Project summary
@@ -72,3 +51,16 @@ llm-api-gateway/
 └── tooling/
     └── tests/                # e2e test helpers
 ```
+
+# 3) Quickstart (dev)
+1. `docker-compose up --build`
+2. Gateway: `http://localhost:8080/v1/llm/chat`
+3. Admin: `http://localhost:3000`
+
+# 4) Components
+- gateway (Go): edge gateway
+- adapters: provider adapters
+- admin (NestJS): API key & usage dashboard
+- infra: docker-compose / k8s manifests
+
+
