@@ -11,6 +11,7 @@ type Config struct {
     ServerPort string
     OpenAIKey  string
     HuggingFaceKey string
+    GroqKey        string
     RedisAddr  string
 }
 
@@ -24,6 +25,7 @@ func Load() *Config {
 		ServerPort:     getEnv("SERVER_PORT", "3020"),
 		OpenAIKey:      getEnv("OPENAI_API_KEY", ""),
 		HuggingFaceKey: getEnv("HF_API_KEY", ""),
+		GroqKey:       getEnv("GROQ_API_KEY", ""),
 		RedisAddr:      getEnv("REDIS_ADDR", "localhost:6379"),
 	}
 	if cfg.OpenAIKey == "" {
