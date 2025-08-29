@@ -14,8 +14,20 @@ services:
     depends_on:
       - redis
 
-  #admin:
-  #  build: ./admin
-  #  ports: ["3010:3010"]
-  #  depends_on:
-  #    - redis
+  prometheus:
+    image: prom/prometheus
+    volumes:
+    - ../../ops/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports: ["9090:9090"]
+
+  grafana:
+    image: grafana/grafana:latest
+    ports: ["3001:3000"]
+    volumes:
+    - ../../ops/grafana:/var/lib/grafana  
+
+  admin:
+    build: ../admin
+    ports: ["3010:3010"]
+    depends_on:
+      - redis
