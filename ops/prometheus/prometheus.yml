@@ -1,0 +1,12 @@
+scrape_configs:
+  - job_name: 'gateway'
+    static_configs:
+      - targets: ['gateway:3020']
+
+  - job_name: 'openai-adapter'
+    static_configs:
+      - targets: ['adapter-openai:3030']
+
+  - job_name: 'hf-adapter'
+    static_configs:
+      - targets: ['adapter-hf:3040']
