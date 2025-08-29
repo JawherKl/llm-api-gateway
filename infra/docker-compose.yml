@@ -6,6 +6,8 @@ services:
 
   gateway:
     build: ../gateway
+    env_file:
+      - ../gateway/.env
     ports: ["3020:3020"]
     environment:
       REDIS_ADDR: "redis:6379"
