@@ -28,6 +28,8 @@ func QueryHandler(cfg *config.Config) gin.HandlerFunc {
             response, err = services.QueryOpenAI(cfg.OpenAIKey, req.Prompt)
         case "hf":
             response, err = services.QueryHuggingFace(cfg.HuggingFaceKey, req.Prompt)
+        case "groq":
+            response, err = services.QueryGroq(cfg.GroqKey, req.Prompt)
         default:
             c.JSON(http.StatusBadRequest, gin.H{"error": "Unsupported provider"})
             return
