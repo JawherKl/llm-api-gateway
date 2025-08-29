@@ -1,6 +1,14 @@
 # Unified LLM API Gateway
 
-## Project summary
+![Repository Size](https://img.shields.io/github/repo-size/JawherKl/llm-api-gateway)
+![Last Commit](https://img.shields.io/github/last-commit/JawherKl/llm-api-gateway)
+![Issues](https://img.shields.io/github/issues-raw/JawherKl/llm-api-gateway)
+![Forks](https://img.shields.io/github/forks/JawherKl/llm-api-gateway)
+![Stars](https://img.shields.io/github/stars/JawherKl/llm-api-gateway)
+
+![nodepost](https://raw.githubusercontent.com/JawherKl/llm-api-gateway/refs/heads/main/llm-api-gateway.jpg)
+
+## ✨ Overview
 
 **Unified LLM API Gateway** a scalable API gateway that aggregates and normalizes calls to multiple LLM backends (OpenAI, HF Inference, self-hosted models), with caching, rate limiting, logging, metrics, and deployment manifests for Docker/Kubernetes.
 
