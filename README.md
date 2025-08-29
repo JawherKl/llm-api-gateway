@@ -54,8 +54,8 @@ llm-api-gateway/
 
 # 3) Quickstart (dev)
 1. `docker-compose up --build`
-2. Gateway: `http://localhost:8080/v1/llm/chat`
-3. Admin: `http://localhost:3000`
+2. Gateway: `http://localhost:3020/v1/llm/chat`
+3. Admin: `http://localhost:3040`
 
 # 4) Components
 - gateway (Go): edge gateway

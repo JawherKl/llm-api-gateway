@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: llm-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: llm-gateway
+  template:
+    metadata:
+      labels:
+        app: llm-gateway
+    spec:
+      containers:
+        - name: gateway
+          image: your-dockerhub-username/llm-gateway:latest # <-- update with your image
+          ports:
+            - containerPort: 3020
+          env:
+            - name: SERVER_PORT
+              value: "3020"
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: llm-secrets
+                  key: openai_api_key
+            - name: HF_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: llm-secrets
+                  key: hf_api_key
+            - name: GROQ_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: llm-secrets
+                  key: groq_api_key
+            - name: GATEWAY_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: llm-secrets
+                  key: gateway_api_key
+            - name: REDIS_ADDR
+              value: "redis:6379"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: llm-gateway
+spec:
+  selector:
+    app: llm-gateway
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3020
+  type: ClusterIP
