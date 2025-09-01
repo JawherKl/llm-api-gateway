@@ -26,8 +26,8 @@ services:
     volumes:
     - ../../ops/grafana:/var/lib/grafana  
 
-  admin:
-    build: ../admin
-    ports: ["3010:3010"]
-    depends_on:
-      - redis
+  #admin:
+  #  build: ../admin
+  #  ports: ["3010:3010"]
+  #  depends_on:
+  #    - redis
