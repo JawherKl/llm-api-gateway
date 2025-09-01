@@ -14,6 +14,8 @@ type Config struct {
     GroqKey        string
     RedisAddr  string
 	OpenRouterKey string
+	AnthropicKey string
+	GeminiKey string
 }
 
 func Load() *Config {
@@ -28,6 +30,8 @@ func Load() *Config {
 		HuggingFaceKey: getEnv("HF_API_KEY", ""),
 		GroqKey:       getEnv("GROQ_API_KEY", ""),
 		OpenRouterKey: getEnv("OPENROUTER_API_KEY", ""),
+		AnthropicKey: getEnv("ANTHROPIC_API_KEY", ""),
+		GeminiKey: getEnv("GEMINI_API_KEY", ""),
 		RedisAddr:      getEnv("REDIS_ADDR", "localhost:6379"),
 	}
 	if cfg.OpenAIKey == "" {
