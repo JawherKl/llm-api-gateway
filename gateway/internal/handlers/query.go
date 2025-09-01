@@ -46,6 +46,8 @@ func QueryHandler(cfg *config.Config, cache *cache.Cache) gin.HandlerFunc {
             response, err = services.QueryHuggingFace(cfg.HuggingFaceKey, req.Prompt)
         case "groq":
             response, err = services.QueryGroq(cfg.GroqKey, req.Prompt)
+        case "openrouter":
+            response, err = services.QueryOpenRouter(cfg.OpenRouterKey, req.Prompt)
         default:
             c.JSON(http.StatusBadRequest, gin.H{"error": "Unsupported provider"})
             return
