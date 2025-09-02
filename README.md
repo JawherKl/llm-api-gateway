@@ -28,7 +28,7 @@ It provides a unified API with built-in caching, rate limiting, authentication, 
 
 - **API Gateway (Go):**  
   - Accepts client requests
-  - Handles authentication, routing, request transformation
+  - Handles authentication, routing and request transformation
   - Aggregates/fans-out to LLM backends
 - **LLM Adapters (microservices):**  
   - Wrap each provider’s API (OpenAI, Hugging Face, etc.) with a unified internal interface
