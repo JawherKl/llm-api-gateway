@@ -12,8 +12,15 @@
 
 ## ✨ Overview
 
-**Unified LLM API Gateway** is a scalable, extensible platform that aggregates and normalizes calls to multiple LLM backends (OpenAI, Hugging Face, Groq, Anthropic, Gemini, and more).  
+**Unified LLM API Gateway** is a scalable, extensible platform that aggregates and normalises calls to multiple LLM backends (OpenAI, Hugging Face, Groq, Anthropic, Gemini, and more).  
 It provides a unified API with built-in caching, rate limiting, authentication, logging, metrics, and production-ready deployment manifests for Docker and Kubernetes.
+
+---
+
+[![Go Version](https://img.shields.io/badge/Go-1.21%2B-blue.svg)](https://golang.org/)
+[![Gin Framework](https://img.shields.io/badge/Gin-Framework-green.svg)](https://gin-gonic.com/)
+[![OpenRouter AI](https://img.shields.io/badge/OpenAI-black.svg)](https://openai.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
 
