@@ -85,7 +85,7 @@ llm-api-gateway/
    docker-compose up --build
    ```
 2. **Gateway API:**  
-   [http://localhost:3020/v1/llm/chat](http://localhost:3020/v1/llm/chat)
+   [http://localhost:3020/gateway/query](http://localhost:3020/gateway/query)
 3. **Admin Dashboard:**  
    [http://localhost:3040](http://localhost:3040)
 
@@ -121,7 +121,7 @@ llm-api-gateway/
 ### Request
 
 ```http
-POST /v1/llm/chat
+POST /gateway/query
 Authorization: <your-gateway-api-key>
 Content-Type: application/json
 
