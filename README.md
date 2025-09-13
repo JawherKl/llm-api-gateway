@@ -188,7 +188,6 @@ Content-Type: application/json
 
 Contributions are welcome! Please open issues or PRs for bugs, features, or improvements.
 <!--
----
 
 ## 📄 License
 
