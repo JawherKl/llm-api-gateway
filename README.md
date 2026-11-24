@@ -188,9 +188,9 @@ Content-Type: application/json
 
 Contributions are welcome! Please open issues or PRs for bugs, features, or improvements.
 
-## 📄 License
+## 📝 License
 
-[MIT](LICENSE.md)
+This project is open-source and available under the [MIT License](LICENSE).
 
 ## Star History
 
