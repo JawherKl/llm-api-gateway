@@ -192,7 +192,7 @@ Contributions are welcome! Please open issues or PRs for bugs, features, or impr
 
 This project is open-source and available under the [MIT License](LICENSE).
 
-## Star History
+## ⭐ Star History
 
 <a href="https://www.star-history.com/?repos=jawherkl%2Fllm-api-gateway&type=date&legend=top-left">
  <picture>
