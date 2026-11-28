@@ -201,4 +201,3 @@ This project is open-source and available under the [MIT License](LICENSE).
    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=jawherkl/llm-api-gateway&type=date&legend=top-left" />
  </picture>
 </a>
-
